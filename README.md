@@ -1,6 +1,8 @@
-# QIE AgentPay — Phase 1
+# QIE AgentPay — Phases 1 and 2
 
-Read-only TypeScript/Express API for the QIE Blockchain Hackathon 3.0. The backend uses ethers v6 for EVM address/checksum validation and exact native-token formatting, dotenv for configuration, and Zod for validation. No Telegram bot, AI integration, transaction creation, custody, signing, or deployment is included in this phase.
+Read-only TypeScript/Express API and Telegram bot for the QIE Blockchain Hackathon 3.0. The backend uses ethers v6 for EVM address/checksum validation and exact native-token formatting, dotenv for configuration, and Zod for validation. Phase 2 adds @QIEAgentPayBot in `apps/bot` using Telegraf long polling and the existing API. No AI integration, transaction creation, custody, signing, real invoices, database, smart contracts or deployment is included.
+
+For bot setup, configuration, file descriptions and command-by-command verification, see [apps/bot/README.md](apps/bot/README.md). The API instructions below remain applicable; run the API and bot in separate terminals.
 
 ## Local setup
 
@@ -89,4 +91,4 @@ Only public addresses are accepted. Do not send private keys, seed phrases, sign
 
 Implementation references: [ethers v6 utilities](https://docs.ethers.org/v6/api/utils/) and [Express error handling](https://expressjs.com/en/guide/error-handling/).
 
-Phase 1 stops here. No deployment is configured or performed.
+The implemented scope stops after Phase 2. No deployment is configured or performed.
