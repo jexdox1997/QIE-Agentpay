@@ -6,3 +6,13 @@ coverage/
 !.env.example
 *.log
 *.tsbuildinfo
+
+apps/contracts/artifacts/
+apps/contracts/cache/
+apps/contracts/coverage/
+apps/contracts/typechain-types/
+apps/contracts/deployments/
+apps/contracts/secrets/
+apps/contracts/keystore/
+apps/contracts/*.key
+apps/contracts/*.pem
