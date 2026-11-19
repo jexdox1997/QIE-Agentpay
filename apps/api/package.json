@@ -1,0 +1,31 @@
+{
+  "name": "@qie-agentpay/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts",
+    "check": "npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "ethers": "^6.17.0",
+    "express": "^5.3.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.19.2",
+    "@types/supertest": "^7.2.1",
+    "supertest": "^7.3.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
